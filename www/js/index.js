@@ -5,8 +5,19 @@ function doSocketMagic() {
   window.plugins.SocketRocket.onMessage(function(message) {
     var htmlz = '<p class="status">' + message + '</p>'
     messages.innerHTML = messages.innerHTML + htmlz
+    window.scrollTo(0, document.body.scrollHeight)
   })
-  window.plugins.SocketRocket.connect("ws://pizzacats.local:9000", function() {
-    window.plugins.SocketRocket.send(JSON.stringify({'locations':'-122.75,36.8,-121.75,37.8,-74,40,-73,41'}))
-  })
+  navigator.geolocation.getCurrentPosition(
+    function(position) {
+      window.plugins.SocketRocket.connect("ws://smalldata.org:9000", function() {
+        var lat = parseFloat(position.coords.latitude);
+        var lon = parseFloat(position.coords.longitude);
+        var bbox = [lon - 0.5, lat - 0.5, lon + 0.5, lat + 0.5]
+        window.plugins.SocketRocket.send(JSON.stringify({'locations': bbox.join(',')}))
+      })
+    },
+    function(error) {
+      messages.innerHTML = "Not allowed to read your location, sorry!"
+    }
+  )
 }

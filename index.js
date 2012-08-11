@@ -26,6 +26,9 @@ function startStreaming(options) {
       console.log(data.text)
       tweets.emit('tweet', data.text)
     })
+    stream.on('error', function(err) {
+      tweets.emit('tweet', err)
+    })
   })
 }
 
