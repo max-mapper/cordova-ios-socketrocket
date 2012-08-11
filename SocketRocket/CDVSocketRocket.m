@@ -1,26 +1,27 @@
 #import "CDVSocketRocket.h"
-#import <Cordova/JSONKit.h>
-#import <Cordova/CDVAvailability.h>
-
-// #define TWITTER_URL @"http://api.twitter.com/1/"
 
 @implementation SocketRocketPlugin {
   SRWebSocket *_webSocket;
 }
 
 @synthesize openCallbackId;
-
+@synthesize messageCallbackId;
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message;
 {
-  NSLog(@"Received \"%@\"", message);
-  // [super writeJavascript:[[CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:message] toSuccessCallbackString:callbackId]];
+  if (messageCallbackId.length > 0) {
+    [super writeJavascript:[[CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:message] toSuccessCallbackString:messageCallbackId]];
+  }
 }
 
 - (void) send:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options {
   NSString *message = [options objectForKey:@"message"];
   NSLog(@"Sending \"%@\"", message);
   [_webSocket send:message];
+}
+
+- (void) onMessage:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options {
+  self.messageCallbackId = [arguments objectAtIndex:0];
 }
 
 - (void) connect:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options {
