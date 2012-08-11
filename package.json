@@ -1,0 +1,7 @@
+{
+  "name": "cordova-socket",
+  "version": "0.0.1",
+  "dependencies": {
+    "websocket": "git://github.com/Worlize/WebSocket-Node.git"
+  }
+}
