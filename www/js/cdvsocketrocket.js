@@ -1,4 +1,6 @@
-var SocketRocket = function(){}
+var SocketRocket = function() {
+  this.messageCallback = false
+}
 
 SocketRocket.prototype.connect = function(server, cb) {
   cordova.exec(cb, null, "SocketRocketPlugin", "connect", [{server: server}])
@@ -9,7 +11,11 @@ SocketRocket.prototype.send = function(message) {
 }
 
 SocketRocket.prototype.onMessage = function(cb) {
-  cordova.exec(cb, null, "SocketRocketPlugin", "onMessage", [])
+  this.messageCallback = cb
+}
+
+SocketRocket.prototype.messageReceiver = function(message) {
+  if (this.messageCallback) this.messageCallback(message)
 }
 
 cordova.addConstructor(function() {

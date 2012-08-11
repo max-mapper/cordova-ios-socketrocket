@@ -2,6 +2,7 @@
   "name": "cordova-socket",
   "version": "0.0.1",
   "dependencies": {
-    "websocket": "git://github.com/Worlize/WebSocket-Node.git"
+    "websocket": "git://github.com/Worlize/WebSocket-Node.git",
+    "ntwitter": "0.4.1"
   }
 }

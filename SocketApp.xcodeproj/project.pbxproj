@@ -42,12 +42,12 @@
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E1352710E2C1420031B30D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* Cordova.plist */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		585CB33815D62CAB00AB4957 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585CB33715D62CAB00AB4957 /* Security.framework */; };
-		585CB33A15D62CC200AB4957 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 585CB33915D62CC200AB4957 /* libicucore.dylib */; };
-		585CB34815D6316300AB4957 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 585CB33F15D6316300AB4957 /* base64.c */; };
-		585CB34915D6316300AB4957 /* CDVSocketRocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 585CB34215D6316300AB4957 /* CDVSocketRocket.m */; };
-		585CB34A15D6316300AB4957 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 585CB34415D6316300AB4957 /* NSData+SRB64Additions.m */; };
-		585CB34B15D6316300AB4957 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 585CB34715D6316300AB4957 /* SRWebSocket.m */; };
+		584D3C3015D7008E002DCA56 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584D3C2F15D7008E002DCA56 /* Security.framework */; };
+		584D3C3215D70092002DCA56 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 584D3C3115D70092002DCA56 /* libicucore.dylib */; };
+		58C25D3D15D6FFF6006EC169 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 58C25D3415D6FFF6006EC169 /* base64.c */; };
+		58C25D3E15D6FFF6006EC169 /* CDVSocketRocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C25D3715D6FFF6006EC169 /* CDVSocketRocket.m */; };
+		58C25D3F15D6FFF6006EC169 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C25D3915D6FFF6006EC169 /* NSData+SRB64Additions.m */; };
+		58C25D4015D6FFF6006EC169 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C25D3C15D6FFF6006EC169 /* SRWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,17 +108,17 @@
 		30E1352610E2C1420031B30D /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cordova.plist; path = ../Cordova.plist; sourceTree = "<group>"; };
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* SocketApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketApp-Prefix.pch"; sourceTree = "<group>"; };
-		585CB33715D62CAB00AB4957 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		585CB33915D62CC200AB4957 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		585CB33F15D6316300AB4957 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
-		585CB34015D6316300AB4957 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
-		585CB34115D6316300AB4957 /* CDVSocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVSocketRocket.h; sourceTree = "<group>"; };
-		585CB34215D6316300AB4957 /* CDVSocketRocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVSocketRocket.m; sourceTree = "<group>"; };
-		585CB34315D6316300AB4957 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
-		585CB34415D6316300AB4957 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
-		585CB34515D6316300AB4957 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
-		585CB34615D6316300AB4957 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
-		585CB34715D6316300AB4957 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		584D3C2F15D7008E002DCA56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		584D3C3115D70092002DCA56 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		58C25D3415D6FFF6006EC169 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		58C25D3515D6FFF6006EC169 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		58C25D3615D6FFF6006EC169 /* CDVSocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVSocketRocket.h; sourceTree = "<group>"; };
+		58C25D3715D6FFF6006EC169 /* CDVSocketRocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVSocketRocket.m; sourceTree = "<group>"; };
+		58C25D3815D6FFF6006EC169 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		58C25D3915D6FFF6006EC169 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		58C25D3A15D6FFF6006EC169 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		58C25D3B15D6FFF6006EC169 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		58C25D3C15D6FFF6006EC169 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SocketApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SocketApp-Info.plist"; path = "../SocketApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,17 +127,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				585CB33A15D62CC200AB4957 /* libicucore.dylib in Frameworks */,
-				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				585CB33815D62CAB00AB4957 /* Security.framework in Frameworks */,
+				584D3C3215D70092002DCA56 /* libicucore.dylib in Frameworks */,
+				584D3C3015D7008E002DCA56 /* Security.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				301BF5B5109A6A2B0062928A /* AddressBook.framework in Frameworks */,
 				301BF5B7109A6A2B0062928A /* AddressBookUI.framework in Frameworks */,
 				301BF5B9109A6A2B0062928A /* AudioToolbox.framework in Frameworks */,
 				301BF5BB109A6A2B0062928A /* AVFoundation.framework in Frameworks */,
+				301BF5BD109A6A2B0062928A /* CFNetwork.framework in Frameworks */,
 				301BF5BF109A6A2B0062928A /* CoreLocation.framework in Frameworks */,
 				301BF5C1109A6A2B0062928A /* MediaPlayer.framework in Frameworks */,
 				301BF5C3109A6A2B0062928A /* QuartzCore.framework in Frameworks */,
@@ -190,8 +190,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				585CB33915D62CC200AB4957 /* libicucore.dylib */,
-				585CB33715D62CAB00AB4957 /* Security.framework */,
+				584D3C3115D70092002DCA56 /* libicucore.dylib */,
+				584D3C2F15D7008E002DCA56 /* Security.framework */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -264,7 +264,7 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				585CB33E15D6316300AB4957 /* SocketRocket */,
+				58C25D3315D6FFF6006EC169 /* SocketRocket */,
 			);
 			name = Plugins;
 			path = SocketApp/Plugins;
@@ -309,18 +309,18 @@
 			path = se.lproj;
 			sourceTree = "<group>";
 		};
-		585CB33E15D6316300AB4957 /* SocketRocket */ = {
+		58C25D3315D6FFF6006EC169 /* SocketRocket */ = {
 			isa = PBXGroup;
 			children = (
-				585CB33F15D6316300AB4957 /* base64.c */,
-				585CB34015D6316300AB4957 /* base64.h */,
-				585CB34115D6316300AB4957 /* CDVSocketRocket.h */,
-				585CB34215D6316300AB4957 /* CDVSocketRocket.m */,
-				585CB34315D6316300AB4957 /* NSData+SRB64Additions.h */,
-				585CB34415D6316300AB4957 /* NSData+SRB64Additions.m */,
-				585CB34515D6316300AB4957 /* SocketRocket-Prefix.pch */,
-				585CB34615D6316300AB4957 /* SRWebSocket.h */,
-				585CB34715D6316300AB4957 /* SRWebSocket.m */,
+				58C25D3415D6FFF6006EC169 /* base64.c */,
+				58C25D3515D6FFF6006EC169 /* base64.h */,
+				58C25D3615D6FFF6006EC169 /* CDVSocketRocket.h */,
+				58C25D3715D6FFF6006EC169 /* CDVSocketRocket.m */,
+				58C25D3815D6FFF6006EC169 /* NSData+SRB64Additions.h */,
+				58C25D3915D6FFF6006EC169 /* NSData+SRB64Additions.m */,
+				58C25D3A15D6FFF6006EC169 /* SocketRocket-Prefix.pch */,
+				58C25D3B15D6FFF6006EC169 /* SRWebSocket.h */,
+				58C25D3C15D6FFF6006EC169 /* SRWebSocket.m */,
 			);
 			path = SocketRocket;
 			sourceTree = SOURCE_ROOT;
@@ -446,10 +446,10 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				585CB34815D6316300AB4957 /* base64.c in Sources */,
-				585CB34915D6316300AB4957 /* CDVSocketRocket.m in Sources */,
-				585CB34A15D6316300AB4957 /* NSData+SRB64Additions.m in Sources */,
-				585CB34B15D6316300AB4957 /* SRWebSocket.m in Sources */,
+				58C25D3D15D6FFF6006EC169 /* base64.c in Sources */,
+				58C25D3E15D6FFF6006EC169 /* CDVSocketRocket.m in Sources */,
+				58C25D3F15D6FFF6006EC169 /* NSData+SRB64Additions.m in Sources */,
+				58C25D4015D6FFF6006EC169 /* SRWebSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

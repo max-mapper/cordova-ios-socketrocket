@@ -1,26 +1,12 @@
-var app = {
-    initialize: function() {
-        this.bind();
-    },
-    bind: function() {
-        document.addEventListener('deviceready', this.deviceready, false);
-    },
-    deviceready: function() {
-        // note that this is an event handler so the scope is that of the event
-        // so we need to call app.report(), and not this.report()
-        app.report('deviceready');
-        window.plugins.SocketRocket.onMessage(function(message) {
-          console.log("RECEIVED " + message)
-        })
-        window.plugins.SocketRocket.connect("ws://localhost:9000", function() {
-          window.plugins.SocketRocket.send("hello")
-        })
-    },
-    report: function(id) { 
-        console.log("report:" + id);
-        // hide the .pending <p> and show the .complete <p>
-        document.querySelector('#' + id + ' .pending').className += ' hide';
-        var completeElem = document.querySelector('#' + id + ' .complete');
-        completeElem.className = completeElem.className.split('hide').join('');
-    }
-};
+document.addEventListener('deviceready', doSocketMagic)
+
+function doSocketMagic() {
+  var messages = document.querySelector('.messages')
+  window.plugins.SocketRocket.onMessage(function(message) {
+    var htmlz = '<p class="status">' + message + '</p>'
+    messages.innerHTML = messages.innerHTML + htmlz
+  })
+  window.plugins.SocketRocket.connect("ws://pizzacats.local:9000", function() {
+    window.plugins.SocketRocket.send(JSON.stringify({'locations':'-122.75,36.8,-121.75,37.8,-74,40,-73,41'}))
+  })
+}
