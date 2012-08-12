@@ -1,0 +1,23 @@
+/Users/maxogden/src/cordova-socket/Android/gen/com/maxogden/droidsocket/R.java \
+ : /Users/maxogden/src/cordova-socket/Android/res/drawable/icon.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-hdpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-hdpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-ldpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-ldpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-mdpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-mdpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-xhdpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/res/drawable-xhdpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/res/layout/main.xml \
+/Users/maxogden/src/cordova-socket/Android/res/values/strings.xml \
+/Users/maxogden/src/cordova-socket/Android/res/xml/config.xml \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable/icon.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-hdpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-hdpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-ldpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-ldpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-mdpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-mdpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-xhdpi/ic_launcher.png \
+/Users/maxogden/src/cordova-socket/Android/bin/res/drawable-xhdpi/icon.png \
+/Users/maxogden/src/cordova-socket/Android/bin/AndroidManifest.xml \

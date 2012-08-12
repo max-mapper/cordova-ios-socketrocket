@@ -29,8 +29,7 @@
   [_webSocket open];
 }
 
-- (void)webSocketDidOpen:(SRWebSocket *)webSocket;
-{
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket; {
   [super writeJavascript:[[CDVPluginResult resultWithStatus:CDVCommandStatus_OK] toSuccessCallbackString:self.openCallback]];
 }
 
